@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font links -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet"> -->
+    <!-- css link -->
+    <link rel="stylesheet" href="dojoweather.css">
+    <title>DojoWeather</title>
+</head>
+<body>
+    <header class="header">
+        <h1>DojoWeather</h1>
+        <div class="flex-list">
+            <ul class="flex-list">
+                <li class="flex-list" onclick="msg();">Burbank</li>
+                <li class="flex-list" onclick="msg();">Chicago</li>
+                <li class="flex-list" onclick="msg();">Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="align-all">
+            <!-- city -->
+            <div class="city">
+                <div>
+                    <h2>San Jose</h2>
+                </div>
+                <div class="flex-spacebetween">
+                    <p>Show temperature in  </p>
+                    <select name="temperature">
+                        <option>C°</option>
+                        <option>F°</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <div class="line"></div>
+            </div>
+            <!-- boxes containing the weather -->
+            <!-- todays weather -->
+            <div class="flex">
+                <div class="containers">
+                    <h2>Today</h2>
+                    <img src="assets/some_rain.png" alt="rain" class="img">
+                    <p>some rain</p>
+                    <div class="flex">
+                        <p class="high">24°</p> 
+                        <p class="low">18°</p>
+                    </div>
+                </div>
+                <!-- tomorrows weather  -->
+                <div class="containers">
+                    <h2>Tomorrow</h2>
+                    <img src="assets/some_sun.png" alt="sunny" class="img">
+                    <p>some sun</p>
+                    <div class="flex">
+                        <p class="high">27°</p>
+                        <p class="low">19°</p>
+                    </div>
+                </div>
+                <!-- fridays weather -->
+                <div class="containers">
+                    <h2>Friday</h2>
+                    <img src="assets/some_clouds.png" alt="cloudy" class="img">
+                    <p>some clouds</p>
+                    <div class="flex">
+                        <p class="high">21°</p>
+                        <p class="low">16°</p>
+                    </div>
+                </div>
+                <!-- saturdays weather -->
+                <div class="containers">
+                    <h2>Saturday</h2>
+                    <img src="assets/some_sun.png" alt="sunny" class="img">
+                    <p>some sun</p>
+                    <div class="flex">
+                        <p class="high">26°</p>
+                        <p class="low">21°</p>
+                    </div>
+                </div>
+            </div>
+            <!-- cookie -->
+            <div class="cookie">
+                <div><img src="assets/cookie.png" alt="cookie"></div>
+                <div><h3>Stop! Cookie time</h3>
+                <p> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media fetures and to analyse our trafic. <a href="#">Read more....</a></p></div>
+                <div><button class="cookie-btn" onclick="dismiss();">I accept</button></div>
+            </div>
+        </div>
+    </main>
+    <script src="dojoweather.js"></script>
+</body>
+</html>
